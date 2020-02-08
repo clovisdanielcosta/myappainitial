@@ -29,6 +29,13 @@ nav{
     font-family: Arial, Helvetica, sans-serif ;
     font-size: 20px;
 }
+
+li{
+    color: rgb(26, 48, 20);
+    font-family: Arial, Helvetica, sans-serif ;
+    font-size: 15px;
+}
+
 footer {
 margin-top: 50px;
 margin-bottom: 30px;
