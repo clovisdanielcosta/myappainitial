@@ -94,6 +94,22 @@
 
     <section id="a_heroku">
         <h2>Heroku - Servidor Cloud</h2>
+        <ul>
+            <h4><b>No Linux Ubuntu 16+</b></h4>
+                <li>01 - Instalar: $ <b>sudo snap install --classic heroku</b></li>
+                <li>02 - Criar conta no Heroku</li>
+                <li>03 - Criar um App no site (copie a url para usar no passo 5)</li>
+                <li>04 - Terminal: $ heroku login -i</li>
+                <li>05 - Clonar App: $ heroku git:clone -a https://git.heroku.com/myapp.git</li>
+                <li>06 - Criando vínculo: $ heroku git:remote -a nomeDoApp</li>
+                <li>07 - Edite localmente o app (VSCode)</li>
+        </ul>
+        <ul>
+            <h4><b>Preparando para subir a aplicação:</b></h4>
+                <li>08 - Verificar modificações: $ git add .</li>
+                <li>09 - Commit: $ git commit -m "Minhas alterações"</li>
+                <li>10 - $ git push heroku</li>
+        </ul>
         <p>
             <a href="https://www.heroku.com/" target="_blank">
                 Site do Heroku</a><br />
