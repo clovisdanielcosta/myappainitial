@@ -20,3 +20,17 @@ $(document).ready(function () {
     }
   });
   
+  // Função para recolher o menu quando clicar na página sem escolher nenhuma opção
+  $(document).on('click', function(event){
+    var $clickedOn = $(event.target),
+    $collapsableItems = $('.collapse'),
+    isToggleButton = ($clickedOn.closest('.dropdownMenuButton').length == 1),
+    isLink = ($clickedOn.closest('#dropdownMenuButton').length == 1),
+    isOutsideNavbar = ($clickedOn.parents('.btn').length == 0);
+    
+    if( (!isToggleButton && isLink) || isOutsideNavbar ) {
+      $collapsableItems.each(function(){
+        $(this).collapse('hide');
+      });
+    }
+  });
