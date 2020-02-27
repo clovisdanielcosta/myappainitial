@@ -63,15 +63,15 @@
     </header>
 
     <section id="a_home" class="home">
-        <div class="container-fluid margin">
+        <div class="container-fluid">
         <h1>Aprendendo a Programar</h1>
         <p class="text-center">O objetivo deste site é ajudar a aumentar o conhecimento sobre
             programação.
         </p>
-        
+        <h2 class="margin">Sugestão do autor</h2>
             <img src="https://hermes.digitalinnovation.one/site/images/logo-sm-white.png"
-            class="img_padrao"><br /><a>Cursos gratuitos</a>
-            <a  href="https://digitalinnovation.one" target="_blank"> Acesse o site.</a>
+            class="img_padrao"><br /><a>Cursos gratuitos com certificados. Acesse o site:</a>
+            <a  href="https://digitalinnovation.one" target="_blank"> https://digitalinnovation.one</a>
             <p>Estes são os cursos que deveriam ser feitos na sequência:</p>
             <ul class="text-left">
                 <li>Html5 + Css3  </li>
@@ -79,22 +79,28 @@
                 <li>JavaScript  </li>
                 <li>ES6 - Melhorias JavaScript  </li>
                 <li>JavaScript Avançado  </li>
+                <li>React Básico  </li>
+                <li>React Avançado  </li>
+                <li>Node.js  </li>
+                <li>React Native  </li>
             </ul>
         </div>
     </section>
 
     <section id="a_linux">
-        <div class="container-fluid margin">
-            <h2>Linux</h2>
+        <div class="container-fluid">
+            <h2 class="margin">Linux</h2>
             Estes são alguns comandos e dicas sobre o Linux usados
             o desevolvimento de aplicações </p>
-            <p>Deletar pasta: rm - rf nome_da_pasta</p>
+            <ul class="text-left">
+                <li>Deletar pasta: rm - rf nome_da_pasta</li>
+            </ul>
         </div>
     </section>
 
     <section id="a_git">
-        <div class="container-fluid margin">
-            <h2>GitHub</h2>
+        <div class="container-fluid">
+            <h2 class="margin">GitHub</h2>
             <p><a href="https://github.com/" target="_blank">Site: https://github.com/ </a></p>
             <p><b> Repositórios e commits</b><br />
                 1 - Crie uma conta
@@ -115,8 +121,8 @@
     </section>
     
     <section id="a_vscode">
-        <div class="container-fluid margin">
-            <h2>VSCode</h2>
+        <div class="container-fluid">
+            <h2 class="margin">VSCode</h2>
             Estes são alguns atalhos no VSCode para aumentar a produtividade. </p>
             <p><a href="https://tutorialehtml.com/pt/html-guia-completo-tutorial-html/" target="_blank">
                 Dicas VSCode</a></p>
@@ -127,27 +133,32 @@
     </section>
             
     <section id="a_heroku">
-        <div class="container-fluid margin">
-        <h2>Heroku - Servidor Cloud</h2>
+        <div class="container-fluid">
+        <h2 class="margin">Heroku - Servidor Cloud</h2>
         <ul>
-            <h2><b>No Linux Ubuntu 16+</b></h2>
-                <li>01 - Instalar: $ <b>sudo snap install --classic heroku</b></li>
+            <h3><b>No Linux Ubuntu 16+</b></h3>
+                <li>01 - Instalar: $ <b class="terminal">sudo snap install --classic heroku</b></li>
                 <li>02 - Criar conta no Heroku</li>
                 <li>03 - Criar um App no site (copie a url para usar no passo 5)</li>
-                <li>04 - Terminal: $ heroku login -i</li>
-                <li>05 - Clonar App: $ heroku git:clone -a https://git.heroku.com/myapp.git</li>
-                <li>06 - Criando vínculo: $ heroku git:remote -a nomeDoApp</li>
+                <li>04 - Terminal: $ <b class="terminal">heroku login -i</b></li>
+                <li>05 - Clonar App: $ <b class="terminal"> git:clone -a https://git.heroku.com/myapp.git</b></li>
+                <li>06 - Criando vínculo: $<b class="terminal"> heroku git:remote -a nomeDoApp</b></li>
                 <li>07 - Edite localmente o app (VSCode)</li>
         </ul>
         <ul>
-            <h2><b>Preparando para subir a aplicação:</b></h2>
-                <li>08 - Verificar modificações: $ git add .</li>
-                <li>09 - Commit: $ git commit -m "Minhas alterações"</li>
-                <li>10 - $ git push heroku</li>
+            <h3><b>Preparando para subir a aplicação:</b></h3>
+                <li>08 - Verificar modificações: $<b class="terminal"> git add .</b></li>
+                <li>09 - Commit: $<b class="terminal"> git commit -m "Minhas alterações"</b></li>
+                <li>10 - $<b class="terminal"> git push heroku</b></li>
         </ul>
+
+        <ul class="text-left">
+            <li>Site do Heroku: <a href="https://www.heroku.com/" target="_blank">
+                https://www.heroku.com/</a> </li>
+        </ul>
+
         <p>
-            <a href="https://www.heroku.com/" target="_blank">
-                Site do Heroku</a><br />
+            <br />
             <a href="https://adamatti.github.io/blog/git/2017/06/04/heroku.html" target="_blank">
                 Básico do Heroku</a><br />
             <a href="https://share.atelie.software/subindo-um-site-simples-para-o-heroku-7450592106c8" target="_blank">
@@ -159,15 +170,15 @@
     </section>
 
     <section id="a_html5">
-        <div class="container-fluid margin">
-            <h2>Html5</h2>
+        <div class="container-fluid">
+            <h2 class="margin">Html5</h2>
             <p><a href="https://tutorialehtml.com/pt/html-guia-completo-tutorial-html/" target="_blank">
                 Tutorial Html5</a></p>        
         </div>
     </section>
 
     <section id="a_javascript">
-        <div class="container-fluid margin">
+        <div class="container-fluid">
             <h2>JavaScript</h2>
             <p><a href="https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Guide" target="_blank">
                 JavaScript</a></p>
@@ -176,8 +187,8 @@
     </section>
 
     <section id="a_es6">
-        <div class="container-fluid margin">
-            <h2>ES6 - Detalhes ECMA6</h2>
+        <div class="container-fluid">
+            <h2 class="margin">ES6 - Detalhes ECMA6</h2>
             <p><a href="https://victorvhpg.github.io/2016/11/12/es6.html" target="_blank">
                 JavaScript ECMA6 - Detalhes</a></p>
                 <p>Templates Literais: <br />
