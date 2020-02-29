@@ -73,6 +73,10 @@ li {
     color: rgb(154, 255, 71);    
 }
 
+.bkg-tog{
+    color: rgb(154, 255, 71);
+    font-size: 20px;
+}
 .dropd {
     color: rgb(154, 255, 71);
     font-size: 14px;
