@@ -43,6 +43,11 @@ ul {
 li {
     margin-left: 15px;
 }
+
+.prpt {
+    color: rgb(154, 255, 71);
+}
+
 .terminal {
     color: rgb(61, 208, 245);
     background-color: rgb(25, 26, 26);

@@ -51,6 +51,7 @@
                       <a class="dropdown-item dropd" href="#a_javacript">JavaScript</a>
                       <a class="dropdown-item dropd" href="#a_css3">Css3</a>
                       <a class="dropdown-item dropd" href="#a_es6">ES6</a>
+                      <a class="dropdown-item dropd" href="#a_react">ReactJS</a>
                     </div>
                 </div>
 
@@ -140,19 +141,19 @@
         <h2 class="margin">Heroku - Servidor Cloud</h2>
         <ul>
             <h3><b>No Linux Ubuntu 16+</b></h3>
-                <li>01 - Instalar: $ <b class="terminal">sudo snap install --classic heroku</b></li>
+                <li>01 - Instalar: <b class = "prpt">$</b> <b class="terminal">sudo snap install --classic heroku</b></li>
                 <li>02 - Criar conta no Heroku</li>
                 <li>03 - Criar um App no site (copie a url para usar no passo 5)</li>
-                <li>04 - Terminal: $ <b class="terminal">heroku login -i</b></li>
-                <li>05 - Clonar App: $ <b class="terminal"> git:clone -a https://git.heroku.com/myapp.git</b></li>
-                <li>06 - Criando vínculo: $<b class="terminal"> heroku git:remote -a nomeDoApp</b></li>
+                <li>04 - Terminal: <b class = "prpt">$</b> <b class="terminal">heroku login -i</b></li>
+                <li>05 - Clonar App: <b class = "prpt">$</b> <b class="terminal"> git:clone -a https://git.heroku.com/myapp.git</b></li>
+                <li>06 - Criando vínculo: <b class = "prpt">$</b><b class="terminal"> heroku git:remote -a nomeDoApp</b></li>
                 <li>07 - Edite localmente o app (VSCode)</li>
         </ul>
         <ul>
             <h3><b>Preparando para subir a aplicação:</b></h3>
-                <li>08 - Verificar modificações: $<b class="terminal"> git add .</b></li>
-                <li>09 - Commit: $<b class="terminal"> git commit -m "Minhas alterações"</b></li>
-                <li>10 - $<b class="terminal"> git push heroku</b></li>
+                <li>08 - Verificar modificações: <b class = "prpt">$</b><b class="terminal"> git add .</b></li>
+                <li>09 - Commit: <b class = "prpt">$</b><b class="terminal"> git commit -m "Minhas alterações"</b></li>
+                <li>10 - <b class = "prpt">$</b><b class="terminal"> git push heroku</b></li>
         </ul>
 
         <ul class="text-left">
@@ -196,8 +197,59 @@
                 JavaScript ECMA6 - Detalhes</a></p>
                 <p>Templates Literais: <br />
                     Usado para não precisar concatenar variáveis com strings com sinal +. <br />
-                    Sintaxe: `Minha variável é: ${nome_da_variavel}`; <br />
+                    Sintaxe: `Minha variável é: <b class = "prpt">$</b>{nome_da_variavel}`; <br />
                     Detalhe: Usa-se acento (`) e não aspas duplas (") ou simples (').
+                </p>
+        </div>
+    </section>
+
+    <section id="a_react">
+        <div class="container-fluid">
+            <h2 class="margin">ReactJS - Biblioteca do JavaScript</h2>
+            <p>
+                O ReactJS não é uma linguagem de programação e nem tampouco um Framework.
+                Trata-se de uma biblioteca de JavaScript desenvolvida pelos engenheiros 
+                do Facebook para facilitar suas rotinas internas no desenvolvimento 
+                de interfaces de usuários em algumas aplicações mas que acabou 
+                sendo liberada como open source. 
+            </p>
+            <ul>
+                <h3><b>Instalação</b></h3>
+                    <li>Instalar o npm (Instalador de pacotes JavaScript): <b class = "prpt">$</b> <b class="terminal">sudo apt-get install npm</b></li>
+                    <li>Crie uma pasta onde irá instalar o projeto: <b class = "prpt">$</b> <b class="terminal">mkdir meuprojeto</b></li>
+                    <li>Entre na pasta: <b class = "prpt">$</b> <b class="terminal"> cd meu_projeto</b></li>
+                    <li>Dentro da pasta: <b class = "prpt">$</b> <b class="terminal"> npm init</b></li>                    
+                    <li>Crie a pasta 'public': <b class = "prpt">$</b> <b class="terminal"> mkdir public</b></li>                    
+                    <li>Crie a pasta 'src': <b class = "prpt">$</b> <b class="terminal"> mkdir src</b></li>                    
+                    <li>Crie um arquivo chamado<b class = "prpt"> 'index.html'</b> dentro de 'public'</li>
+                    <li>Crie um arquivo chamado<b class = "prpt"> 'index.js'</b> dentro de 'src'</li>
+                    <li>Crie um arquivo chamado<b class = "prpt"> 'styles.css'</b> dentro de 'src'</li>
+                    <li>Coloque alguma formatação css. Ex: <b class = "prpt">body { color: blue; }</b></li>
+                    <li>Na pasta principal (meu_projeto): <b class = "prpt">$</b><b class="terminal"> npm install --save react@16.8.6 react-dom@16.8.6 react-scripts@3.0.1
+                    </b></li>
+                    <li>Editar o arquivo package.json com as configurações necessárias.</li>
+                    <li>Exemplo: <br />
+                        <img src="./img/package_json.jpg" class="img_padrao">
+                    </li>
+                    <li>Após instalado levantar o servidor: <b class = "prpt">$</b><b class="terminal"> npm start</b></li>                    
+                </ul>
+                <p>
+                    <b class = "prpt">Importante:</b><br /> 
+                    O nome do seu projeto não pode ser o nome do diretório.
+                    Caso contr  ário um erro será gerado como abaixo:
+                    $ npm ERR! Refusing to install react as a dependency of itself
+                    Se precisar alterar o nome do projeto edite o arquivo package.json
+                    gerado após o comando anterior 'npm init'. Troque o "name" para 
+                    qualquer nome diferente do diretório onde o projeto está sendo criado.
+                </p>
+                <p>
+                    <b class = "prpt">Detalhe: </b>(não é uma boa prática mas pode ser útil)<br /> 
+                    Após ter rodado todos os comandos e efetuado todas as configurações para 
+                    que a aplicação possa subir, pode-se copiar todo o conteúdo do diretório 
+                    atual para um novo diretório e efetuar as apropriados customizações nos 
+                    arquivos package.json, index.html, index.js e styles.css e a nova aplicação
+                    estará pronta para subir. Caso nenhuma alteração seja efetuada a aplicação 
+                    que subirá no servidor será um clone da anterior.
                 </p>
         </div>
     </section>
