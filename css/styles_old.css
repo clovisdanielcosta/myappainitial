@@ -1,0 +1,102 @@
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background: rgba(0, 0, 0, 0.877);
+     color: white;
+}
+
+header{
+    margin-top: 80px;
+}
+
+h1{
+    
+    text-align: center;
+    color: tomato;
+    font-size: 28px;
+}
+
+h2{
+    color: rgb(243, 148, 7);
+    text-align: left;
+    font-size: 22px;
+}
+
+p{
+    color: white;
+    font-size: 14px;
+}
+
+ul {
+    font-size: 14px;
+}
+
+li{
+    color: rgba(238, 241, 11, 0.87);
+    font-size: 14px;
+}
+
+.title1 {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    background-color: black;
+    color: tomato;
+    font-size: 20px;
+}
+
+.title2 {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    background-color: black;
+    color: rgb(228, 195, 11);
+    font-size: 20px;
+}
+
+.title3{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    background-color: black;
+    color:white;
+    font-size: 20px;
+}
+
+.sub-title {
+    color:rgb(245, 209, 6);
+    font-size: 20px;
+    
+}
+
+.dropd {
+    background-color: rgb(94, 88, 86);
+}
+
+.home {
+    color: white;
+}
+
+.navbara {
+    background-color: black;
+    color: rgb(210, 219, 218);
+}
+
+.margin {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.img_padrao {
+    margin-bottom: 20px;
+    width: 150px;
+}
+
+.logo {
+    margin-bottom: 5px;
+    width: 60px ;
+}
+
+.ul_ident {
+    text-indent: 16px;
+    font-size: 14px;
+}
+
+.bg-footer {
+    font-size: 15px;
+    color: greenyellow;
+}

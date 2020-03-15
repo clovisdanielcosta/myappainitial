@@ -9,7 +9,7 @@
     <script src="bootstrap/js/bootstrap.min.js"></script>
     <script src="js/main.js" type="text/javascript"></script>
     <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/styles.css">
     </head>
 <body>
     
@@ -69,22 +69,37 @@
         <p class="text-center">O objetivo deste site é ajudar a aumentar o conhecimento sobre
             programação.
         </p>
-        <h2 class="margin">Sugestão do autor</h2>
-            <img src="https://hermes.digitalinnovation.one/site/images/logo-sm-white.png"
-            class="img_padrao"><br /><a>Cursos gratuitos com certificados. Acesse o site:</a>
-            <a  href="https://digitalinnovation.one" target="_blank"> https://digitalinnovation.one</a>
-            <p>Estes são os cursos que deveriam ser feitos na sequência:</p>
-            <ul class="text-left">
-                <li>Html5 + Css3  </li>
-                <li>Bootstrap  </li>
-                <li>JavaScript  </li>
-                <li>ES6 - Melhorias JavaScript  </li>
-                <li>JavaScript Avançado  </li>
-                <li>React Básico  </li>
-                <li>React Avançado  </li>
-                <li>Node.js  </li>
-                <li>React Native  </li>
-            </ul>
+
+        <a>Estes são os cursos que deveriam ser feitos na sequência<b class = "prpt"> (Sugestão do autor)</b>:</a>
+
+        <ul class="text-left">
+            <br />
+            <li>Html5 + Css3  </li>
+            <li>Bootstrap  </li>
+            <li>JavaScript  </li>
+            <li>ES6 - Melhorias JavaScript  </li>
+            <li>JavaScript Avançado  </li>
+            <li>JQuery com Ajax  </li>
+            <li>Node.js  </li>
+            <li>React Básico  </li>
+            <li>React Avançado  </li>
+            <li>React Native  </li>
+        </ul>
+
+            <img src="./img/dio-logo-sm-white.png" class="img_padrao " width="40%"><br />
+            <h3><b>Digital Innovation One</b></h3>
+            <a>Cursos gratuitos com certificados.</a><br />
+            <a>Acesse o site:</a>
+            <a  href="https://digitalinnovation.one" 
+            target="_blank"> https://digitalinnovation.one</a><br /><br />
+
+            <img src="./img/logo-rocketseat.svg" class="img_padrao" width="10%"><br />
+            <h3><b>RocketSeat</b></h3>
+            <a>Cursos gratuitos.</a><br />
+            <a>Acesse o site:</a>
+            <a  href="https://rocketseat.com.br" 
+            target="_blank"> https://rocketseat.com.br/</a>
+
         </div>
     </section>
 
@@ -94,9 +109,9 @@
             Estes são alguns comandos e dicas sobre o Linux usados
             o desevolvimento de aplicações </p>
             <ul class="text-left">
-                <li>Deletar pasta: rm - rf nome_da_pasta</li>
-                <li>Acelerar Linux: sudo apt-get install bleachbit</li>
-                <li>Rode o programa: bleachbit</li>
+                <li>Deletar pasta: <b class = "prpt">$</b><b class="terminal"> rm - rf nome_da_pasta</b></li>
+                <li>Acelerar Linux: <b class = "prpt">$</b><b class="terminal"> sudo apt-get install bleachbit</b></li>
+                <li>Rode o programa:<b class = "prpt">$</b><b class="terminal"> bleachbit</b></li>
                 <li>Selecione as opções e mande limpar</li>
             </ul>
         </div>
@@ -105,21 +120,44 @@
     <section id="a_git">
         <div class="container-fluid">
             <h2 class="margin">GitHub</h2>
-            <p><a href="https://github.com/" target="_blank">Site: https://github.com/ </a></p>
             <p><b> Repositórios e commits</b><br />
-                1 - Crie uma conta
-                2 - Crie um repositorio (letras minúsculas de preferência)<br />
-                3 - Clique em Clonar o repositório<br />
-                4 - Entre no diretório local do seu projeto<br />
-                5 - Num terminal digite o comando: git clone endereco_copiado<br />
-                6 - Dentro da pasta desejada:
-                <ul class="ul_ident">
-                    git config user.email "email@email.com" <br />
-                    git config user.name "Seu Nome" <br />
-                    git add . <br />
-                    git commit -m "Commit ajustando pastas no repositório"<br />
-                    git push <br />
-                </ul >
+                <ul>
+                    <li>
+                        1 - Crie uma conta:
+                        <a href="https://github.com/" target="_blank"> https://github.com/ </a>
+                    </li>
+                    <li>
+                        2 - Crie um repositorio (letras minúsculas de preferência)<br />
+                    </li>
+                    <li>
+                        3 - Clique em Clonar o repositório<br />
+                    </li>
+                    <li>
+                        4 - Entre no diretório local do seu projeto<br />
+                    </li>
+                    <li>
+                        5 - Num terminal digite o comando: <b class = "prpt">$</b><b class="terminal"> git clone endereco_copiado</b><br />
+                    </li>
+                </ul>
+                
+                <ul>
+                    <li>6 - Dentro da pasta desejada:</li>
+                    <li>
+                        <b class = "prpt">$</b><b class="terminal"> git config user.email "email@email.com" </b><br />
+                    </li>
+                    <li>
+                        <b class = "prpt">$</b><b class="terminal"> git config user.name "Seu Nome"</b><br />
+                    </li>
+                    <li>
+                        <b class = "prpt">$</b><b class="terminal"> git add . </b><br />
+                    </li>
+                    <li>
+                        <b class = "prpt">$</b><b class="terminal"> git commit -m "Commit ajustando pastas no repositório"</b><br />
+                    </li>
+                    <li>
+                        <b class = "prpt">$</b><b class="terminal"> git push </b><br />
+                    </li>
+                </ul>
             </p>
         </div>
     </section>
@@ -128,14 +166,22 @@
         <div class="container-fluid">
             <h2 class="margin">VSCode</h2>
             Estes são alguns atalhos no VSCode para aumentar a produtividade. </p>
+            <ul>
+                <li>
+                    Rodar output: <b class="terminal">crtl + alt + n</b>
+                </li>
+                <li>
+                    Editar múltiplas linhas: <b class="terminal">shift + alt + Seta</b>
+                </li>
+                <li>
+                    Limpar Output: <b class="terminal">shift + x (Configurar Clear Output nos atalhos)</b>
+                </li>
+            </ul>
             <p><a href="https://tutorialehtml.com/pt/html-guia-completo-tutorial-html/" target="_blank">
-                Dicas VSCode</a></p>
-                <p>Rodar output: crtl + alt + n</p>
-                <p>Editar múltiplas linhas: shift + alt + Seta</p>
-                <p>Limpar Output: shift + x (Configurar Clear Output nos atalhos)</p>
+            Dicas VSCode - Site Oficial (clique aqui)</a></p>
         </div>
     </section>
-            
+    
     <section id="a_heroku">
         <div class="container-fluid">
         <h2 class="margin">Heroku - Servidor Cloud</h2>
@@ -161,7 +207,7 @@
                 https://www.heroku.com/</a> </li>
         </ul>
 
-        <p>
+        <p> Sites para aprender sobre o Heroku (clique nos links):
             <br />
             <a href="https://adamatti.github.io/blog/git/2017/06/04/heroku.html" target="_blank">
                 Básico do Heroku</a><br />
@@ -236,8 +282,9 @@
                 <p>
                     <b class = "prpt">Importante:</b><br /> 
                     O nome do seu projeto não pode ser o nome do diretório.
-                    Caso contr  ário um erro será gerado como abaixo:
-                    $ npm ERR! Refusing to install react as a dependency of itself
+                    Caso contr  ário um erro será gerado como abaixo:<br />
+                    <b class = "prpt">$</b><b class="terminal">
+                    $ npm ERR! Refusing to install react as a dependency of itself</b><br />
                     Se precisar alterar o nome do projeto edite o arquivo package.json
                     gerado após o comando anterior 'npm init'. Troque o "name" para 
                     qualquer nome diferente do diretório onde o projeto está sendo criado.
