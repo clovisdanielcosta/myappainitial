@@ -11,7 +11,7 @@
     <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/styles.css">
     </head>
-<body>
+<body onload="hideAllSections()">
     
     <header>
         <nav class="navbar navbara navbar-expand-md fixed-top">
@@ -35,11 +35,11 @@
             
             <div class="collapse dropd navbar-collapse" id="navbarCollapse">
                 <ul class="navbar-nav mr-auto">
-                    <li class="nav-item"><a class="nav-link" href="#a_home">Home</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#a_linux">Linux</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#a_git">GitHub</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#a_vscode">VsCode</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#a_heroku">Heroku</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#a_home" onclick="showSection(1)">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#a_linux" onclick="showSection(2)">Linux</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#a_git" onclick="showSection(3)">GitHub</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#a_vscode" onclick="showSection(4)">VsCode</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#a_heroku" onclick="showSection(5)">Heroku</a></li>
                 </ul>
                 
                 <div class="dropdown">
@@ -47,18 +47,19 @@
                       Programar
                     </button>
                     <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                      <a class="dropdown-item dropd" href="#a_html5">Html5</a>
-                      <a class="dropdown-item dropd" href="#a_javacript">JavaScript</a>
-                      <a class="dropdown-item dropd" href="#a_css3">Css3</a>
-                      <a class="dropdown-item dropd" href="#a_es6">ES6</a>
-                      <a class="dropdown-item dropd" href="#a_react">ReactJS</a>
+                      <a class="dropdown-item dropd" href="#a_html5" onclick="showSection(6)">Html5</a>
+                      <a class="dropdown-item dropd" href="#a_javascript" onclick="showSection(7)">JavaScript</a>
+                      <a class="dropdown-item dropd" href="#a_css3" onclick="showSection(8)">Css3</a>
+                      <a class="dropdown-item dropd" href="#a_es6" onclick="showSection(9)">ES6</a>
+                      <a class="dropdown-item dropd" href="#a_react" onclick="showSection(10)">ReactJS</a>
                     </div>
                 </div>
-
-                <form class="form-inline mt-2 mt-md-0 drpd">
-                    <input class="form-control mr-sm-1" type="text" placeholder="Pesquisar" aria-label="Pesquisar">
-                    <button class="btn dropd my-2 my-sm-0" type="submit">Pesquisar</button>
-                </form>
+<!---
+    <form class="form-inline mt-2 mt-md-0 drpd"> 
+        <input class="form-control mr-sm-1" type="text" placeholder="Pesquisar" aria-label="Pesquisar">
+        <button class="btn dropd my-2 my-sm-0" type="submit">Pesquisar</button>
+    </form>
+-->
             </div>
         </nav>
     </header>
@@ -85,23 +86,27 @@
             <li>React Avançado  </li>
             <li>React Native  </li>
         </ul>
-
-            <img src="./img/dio-logo-sm-white.png" class="img_padrao " width="40%"><br />
-            <h3><b>Digital Innovation One</b></h3>
-            <a>Cursos gratuitos com certificados.</a><br />
-            <a>Acesse o site:</a>
-            <a  href="https://digitalinnovation.one" 
-            target="_blank"> https://digitalinnovation.one</a><br /><br />
-
-            <img src="./img/logo-rocketseat.svg" class="img_padrao" width="10%"><br />
-            <h3><b>RocketSeat</b></h3>
-            <a>Cursos gratuitos.</a><br />
-            <a>Acesse o site:</a>
-            <a  href="https://rocketseat.com.br" 
-            target="_blank"> https://rocketseat.com.br/</a>
-
         </div>
-    </section>
+        </section>
+
+        <section id="a_plataformas">
+            <div class="container-fluid">
+                <h2 class="margin">Plataformas</h2>        
+                <img src="./img/dio-logo-sm-white.png" class="img_padrao" width="15%"><br />
+                <h3><b>Digital Innovation One</b></h3>
+                <a>Cursos gratuitos com certificados.</a><br />
+                <a>Acesse o site:</a>
+                <a  href="https://digitalinnovation.one" 
+                target="_blank"> https://digitalinnovation.one</a><br /><br />
+                
+                <img src="./img/logo-rocketseat.svg" class="img_padrao" width="5%"><br />
+                <h3><b>RocketSeat</b></h3>
+                <a>Cursos gratuitos.</a><br />
+                <a>Acesse o site:</a>
+                <a  href="https://rocketseat.com.br" 
+                target="_blank"> https://rocketseat.com.br/</a>
+            </div>
+        </section>
 
     <section id="a_linux">
         <div class="container-fluid">
@@ -178,13 +183,14 @@
                 </li>
             </ul>
             <p><a href="https://tutorialehtml.com/pt/html-guia-completo-tutorial-html/" target="_blank">
-            Dicas VSCode - Site Oficial (clique aqui)</a></p>
-        </div>
-    </section>
-    
-    <section id="a_heroku">
-        <div class="container-fluid">
-        <h2 class="margin">Heroku - Servidor Cloud</h2>
+                Dicas VSCode - Site Oficial (clique aqui)</a></p>
+            </div>
+        </section>
+        
+        <section id="a_heroku">
+            <div class="container-fluid">
+                <h2 class="margin">Heroku - Servidor Cloud</h2>
+                Estes são alguns atalhos no VSCode para aumentar a produtividade. </p>
         <ul>
             <h3><b>No Linux Ubuntu 16+</b></h3>
                 <li>01 - Instalar: <b class = "prpt">$</b> <b class="terminal">sudo snap install --classic heroku</b></li>
