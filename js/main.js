@@ -3,6 +3,7 @@ function hideAllSections() {
   
   $('section').hide();
   $("#a_home").show();
+   openFullscreen();
   $("#a_plataformas").show();
 }
 
